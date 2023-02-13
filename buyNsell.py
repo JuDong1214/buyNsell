@@ -52,10 +52,10 @@ def create_graph(data, smallAvgRange, longAvgRange):
 def buy_sell(shortAverage, longAverage, i, buySellToggle):
     if (shortAverage[i] > longAverage[i]) & (buySellToggle == 0):
         buySellToggle = 1
-        return 'BUY HOLY SHIT MF BUY THAT SHIT DUMMY', buySellToggle
+        return 'BUY', buySellToggle
     if (shortAverage[i] < longAverage[i]) & (buySellToggle == 1):
         buySellToggle = 0
-        return 'SELL OR ELSE U LOSE ALL UR MONEY O FUCK', buySellToggle
+        return 'SELL', buySellToggle
     else:
         return 'HOLD', buySellToggle
    
